@@ -53,15 +53,18 @@ const Events = () => {
           <div key={event.id} className="event__card">
             <div className="event__banner" style={{ backgroundImage: `url(${event.banner})` }}></div>
             <div className="event__details">
-              <h1>{event.title}</h1>
+              <h1 className="event__title">{event.title}</h1>
               <div className="event__description">{event.short_description}</div>
               <div className="two__columns">
                 <div className="event__date">{event.date}</div>
-                <div className="btn">Go To</div>
+                <div className="btn goto">Go To</div>
               </div>
             </div>
           </div>
         ))}
+        <div className="event__card">
+          <div className="event__banner empty__banner"></div>
+        </div>
       </div>
     </section>
   );
