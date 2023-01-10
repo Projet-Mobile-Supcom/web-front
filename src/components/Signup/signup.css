@@ -42,6 +42,10 @@
   height: 100%;
 }
 
+.credentials {
+  width: 100%;
+}
+
 .credentials input {
   width: 100%;
   background: var(--color-bg-variant);
@@ -58,4 +62,11 @@
   grid-template-rows: 1fr 1fr;
   align-items: center;
   justify-items: center;
+}
+
+.two__columns {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
 }
